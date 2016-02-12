@@ -11,8 +11,8 @@ int fadeAmount = 5;  // Set the amount to fade I usually do 5, 10, 15, 20, 25 et
 int brightness = 0;
 
 void setup() {
+  Serial.begin(115200);
   FastLED.addLeds<WS2812, DATA_PIN>(leds, NUM_LEDS);
-
 }
 
 void loop() {
@@ -24,7 +24,8 @@ void loop() {
     leds[i].fadeLightBy(brightness);
   }
   FastLED.show();
-  brightness = brightness + fadeAmount;
+  //brightness = brightness + fadeAmount;
+  brightness = 200;
   // reverse the direction of the fading at the ends of the fade:
 //  if(brightness == 0 || brightness == 255)
 //  {
@@ -33,6 +34,6 @@ void loop() {
   if (brightness == 255) {
     brightness = 0;
   }
-  
-  delay(20);  // This delay sets speed of the fade. I usually do from 5-75 but you can always go higher.
+  Serial.println(brightness);
+  delay(100);  // This delay sets speed of the fade. I usually do from 5-75 but you can always go higher.
 }
