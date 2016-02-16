@@ -26,7 +26,7 @@ int pulsePin = 0;     // Pulse Sensor purple wire connected to analog pin 0
 int fadeAmount = 0;   // used to fade LED
 int brightness = 0;
 #define DATA_PIN 6    // pin for WS2812 LEDs
-#define NUM_LEDS 1
+#define NUM_LEDS 6
 CRGB leds[NUM_LEDS];
 long lastBlinkTime = 0;
 long lastFadeStartTime = 0;

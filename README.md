@@ -2,7 +2,7 @@
 A necklace that pulses RGB LEDs in time with your heart.
 
 ## Status
-The main sketch (heartratejewelry) now has an option to blink or fade. I added a running average to smooth noisy sensor data. The LED changes color according to the measured heart rate. So far I have only tested this with a single LED, but it should work for multiple LEDs as long as NUM_LEDs is set appropriately. All delays have been removed and now everything operates off millis() counters.
+The main sketch (heartratejewelry) now has an option to blink or fade. I added a running average to smooth noisy sensor data. The LED changes color according to the measured heart rate. It now has 6 LEDs.
 
 ## Parts Used
 - Frentaly Uno http://www.ebay.com/itm/321871945148
@@ -20,4 +20,5 @@ To be added in the future:
 FastLED https://github.com/FastLED/FastLED & PulseSensor https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino
 
 ## Photo
+![alt tag](https://github.com/lizcorson/heartratejewelry/blob/master/photos/6 LEDs.jpg)
 ![alt tag](https://github.com/lizcorson/heartratejewelry/blob/master/photos/pulse led.jpg)
